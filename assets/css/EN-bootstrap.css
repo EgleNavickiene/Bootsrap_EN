@@ -1,0 +1,50 @@
+body {
+    background: rgb(225, 238, 232);
+}
+
+.mb-3  {
+    align-items: stretch;
+}
+
+.contacts-col{
+    padding-top: 10px;
+}
+
+.las {
+    color: green;
+    text-align: right;
+    align-items: center;
+    font-size: xx-large;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+
+.form-control {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+}
+
+.sigle-contact-adress-row {
+    display: flex;
+}
+
+.contact-row-btn {
+    background: green;
+    color: white;
+    width: auto;
+    padding: 5px 15px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.under-textarea-btn-row:hover 
+.contact-row-btn {
+    color: green;
+    background: white;
+    border-color: green;
+}
+
+.under-textarea-btn-row {
+    justify-content: flex-end;
+}
