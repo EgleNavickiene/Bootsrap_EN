@@ -8,6 +8,14 @@ body {
     color: #fff;
 }
 
+img {
+    max-width: 100%;
+  }
+
+* {
+box-sizing:border-box;
+}
+
 .top-banner {
   position: relative;
   height: 500px;
@@ -74,7 +82,7 @@ body {
 
 
 .single-card-widget-col {
-    width: 30%;
+    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
 }
@@ -99,7 +107,6 @@ body {
 
 .single-card-widget:hover > .top-widget-card-overlay {
     background: rgba(115, 173, 58, 0.7);
-
 }
 
 .top-widget-card-text-on {
@@ -122,7 +129,6 @@ body {
 .hover-a:hover {
     color:rgb(115, 173, 58) !important;
   }
-
 
 .single-post-card {
     background-color: #fafaff;
@@ -157,20 +163,19 @@ body {
 }
 
 .widget-wrap {
-    padding: 10px;
+    padding-top: 15px;
     border: 1px solid lightgray;
 }
 
 .single-sidebar-widget {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     border-bottom:1px solid lightgray;
+    margin: 30px;
 }
 
-.search-widget {
-    margin: 20px;
-}
-
-.search-form, .form-control, .search-form-btn {
+.search-widget .search-form, 
+.search-widget .form-control,
+.search-widget .search-form-btn {
     background-color: rgb(115, 173, 58);
     border-radius: 40px;
     border-style: none;  
@@ -188,9 +193,66 @@ body {
 }
 
 .user-image {
-    margin: 20px;
+    margin: 25px;
     padding-bottom: 15px;
 }
+
+.widget-header {
+    background-color: rgb(115, 173, 58);
+    margin-bottom: 30px;
+}
+.single-post-list__details {
+    margin-left: 10px;
+}
+
+.post-cat-list-item {
+    border-bottom-style: dotted;
+    border-bottom-color: lightgrey;
+    border-bottom-width: 2px;
+}
+
+.subscribe-form .subscribe-form-envelope {
+    font-size: large;
+    border-right-style: none;
+    border-radius: 0;
+    background-color: white;
+    padding-top: 6pt;
+    padding-bottom: 6pt;
+}
+
+.subscribe-form-placeholder {
+    border-left-style: none;
+    border-right-style: none;
+
+    padding-left: 0;
+}
+
+.subscribe-form .search-form-btn {
+    border-radius: 0;
+    border-left-style: none; 
+    border-right-color: lightgray;
+    border-top-color: lightgray;
+    border-bottom-color: lightgray;
+    background-color: yellowgreen;
+}
+
+.tag-clouds-list {
+    padding-left: 0;
+}
+
+.tag-clouds-list .tag-clouds-item {
+    border: 1pt solid lightgray;
+    margin-bottom: 8pt;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.tag-link {
+    padding: 3pt 3pt;
+    margin-right: 6pt;
+}
+
+
 
 
 
