@@ -228,12 +228,17 @@ box-sizing:border-box;
 }
 
 .subscribe-form .search-form-btn {
+    color: white;
     border-radius: 0;
     border-left-style: none; 
     border-right-color: lightgray;
     border-top-color: lightgray;
     border-bottom-color: lightgray;
-    background-color: yellowgreen;
+    background-color: rgb(115, 173, 58);
+}
+
+.subscribe-form .search-form-btn:hover {
+    color: black;
 }
 
 .tag-clouds-list {
@@ -252,7 +257,18 @@ box-sizing:border-box;
     margin-right: 6pt;
 }
 
+.pagination {
+    justify-content: center;
+}
 
+.page-item:hover .page-link {
+    background-color: rgb(115, 173, 58);
+    color: white !important;
+}
 
+.page-navigation {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
 
 
