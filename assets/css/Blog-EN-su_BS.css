@@ -297,3 +297,26 @@ box-sizing:border-box;
     margin-bottom: 70px;
 }
 
+/* footer */
+.footer-area {
+    background: rgb(42, 65, 20);
+    color: white;
+}
+
+.subscribe-confirm-text {
+    display: none;
+}
+
+.section-gap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.copyright-row-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-subscribe-form {
+    width: 95%;
+}
