@@ -16,6 +16,7 @@ img {
 box-sizing:border-box;
 }
 
+/* top banner */
 .top-banner {
   position: relative;
   height: 500px;
@@ -59,14 +60,16 @@ box-sizing:border-box;
 .top-banner-content-text{
     display: block;
     margin-bottom: 2rem;
+    letter-spacing: 2px;
 }
 
 .top-banner-content-text h1 {
     font-weight: 700;
+   
     margin-bottom: 2rem;
 }
 
-.dark-bg-btn {
+.dark-bg-btn {      /* for All same kind buttons */
     color: black;
     background-color: white;
     font-weight: 700;
@@ -74,13 +77,14 @@ box-sizing:border-box;
     padding: 8px 20px;
 }
 
-.dark-bg-btn:hover {
+.dark-bg-btn:hover {        
     background: none;
     border: 1px solid white;
     text-transform: capitalize;
 }
+/* top banner END */
 
-
+/* top-category-widget-area */
 .single-card-widget-col {
     margin-bottom: 30px;
     align-items: center;
@@ -120,16 +124,19 @@ box-sizing:border-box;
     align-content: center;
     letter-spacing: 1px;
 }
+/* top-category-widget-area END */
 
+/* post list left col */
 .list-inline-item:not(:last-child) {
     margin-right: 0;
     margin-left: .5rem;
 }
 
-.hover-a:hover {
+.hover-a:hover {        /* All same kind links */
     color:rgb(115, 173, 58) !important;
   }
 
+/* post list - single post */
 .single-post-card {
     background-color: #fafaff;
     border-style: none;
@@ -145,7 +152,7 @@ box-sizing:border-box;
     color: rgb(115, 173, 58) ;
 }
 
-.light-bg-btn {
+.light-bg-btn {     /* for ALL same kind buttons */
     color: black;
     background-color: white;
     font-weight: 700;
@@ -157,11 +164,13 @@ box-sizing:border-box;
     margin-top: 15px;
 }
 
-.light-bg-btn:hover {
+.light-bg-btn:hover {      
     color: white;
     background: rgb(115, 173, 58);
 }
+/* post list - single post END */
 
+/* widget sidebar (right col) */
 .widget-wrap {
     padding-top: 15px;
     border: 1px solid lightgray;
@@ -173,7 +182,7 @@ box-sizing:border-box;
     margin: 30px;
 }
 
-.search-widget .search-form, 
+.search-widget .search-form,        /* Search-form */
 .search-widget .form-control,
 .search-widget .search-form-btn {
     background-color: rgb(115, 173, 58);
@@ -192,25 +201,35 @@ box-sizing:border-box;
     color: white;
 }
 
+/* user info widget */
 .user-image {
     margin: 25px;
     padding-bottom: 15px;
 }
 
-.widget-header {
+/* popular post widget */
+.widget-header {        /* for all same kind widgets */
     background-color: rgb(115, 173, 58);
     margin-bottom: 30px;
 }
+
 .single-post-list__details {
     margin-left: 10px;
 }
 
+/* post categories widget */
 .post-cat-list-item {
     border-bottom-style: dotted;
     border-bottom-color: lightgrey;
     border-bottom-width: 2px;
 }
 
+.post-cat-list-item:hover {
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(115, 173, 58);
+}
+
+/* newsletter subscribe widget */
 .subscribe-form .subscribe-form-envelope {
     font-size: large;
     border-right-style: none;
@@ -241,6 +260,7 @@ box-sizing:border-box;
     color: black;
 }
 
+/* tag clouds widget */
 .tag-clouds-list {
     padding-left: 0;
 }
@@ -253,10 +273,16 @@ box-sizing:border-box;
 }
 
 .tag-link {
-    padding: 3pt 3pt;
-    margin-right: 6pt;
+    padding: 4pt 8pt;
 }
 
+.hover-bg:hover {       /* For all same kind items */
+    background-color:rgb(115, 173, 58);
+    color: white !important;
+  }
+
+
+/* pagination */
 .pagination {
     justify-content: center;
 }
@@ -270,5 +296,4 @@ box-sizing:border-box;
     margin-top: 40px;
     margin-bottom: 70px;
 }
-
 
