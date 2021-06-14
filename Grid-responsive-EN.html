@@ -13,6 +13,9 @@
     />
 
     <style>
+      body {
+        padding-top: 75px;
+      }
       .card-footer {
         --bs-gutter-x: 0;
       }
@@ -27,6 +30,47 @@
     
   </head>
   <body>
+<!-- navbar-menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+      <div class="logo">
+          <a class="navbar-brand" href="#">
+              <img src="assets/img/LOGO_2.png" alt="logo" >
+          </a>
+      </div>
+      <div class="menu-items">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+      </div>    
+    
+  </div>
+</nav>
+<!-- navbar-end -->
+
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -44,9 +88,10 @@
       <div class="row">
         <div class="col-12 col-md-4 col-lg-3 col-xl-6">
           <div class="card mb-4">
-            <img
+            
+            <img style="position: relative;"
               src="https://bit.ly/2SiZpPj"
-              class="card-img-top p-3"
+              class="card-img-top ps-3 pe-3 pt-4"
               alt="Product"
             />
             <div class="card-body">
@@ -71,7 +116,7 @@
                   text-center
                 "
               >
-                <a href="#" class="btn btn-primary mb-2 mt-2"> Buy Now </a>
+                <a href="#" class="btn btn-primary mb-2 mt-2"> Pirkti </a>
               </div>
               <div
                 class="
@@ -100,6 +145,22 @@
               >
                 <h5 class="text-success mb-0 fw-bold text-center">€ 15.00</h5>
               </div>
+
+              <!-- dropdown-uzduotis -->
+              <div class="Pasirinkimai text-end" style="position: absolute; top:2%; right: 2%;">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Pasirinkti</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- dropdown uzd. end -->
+
             </div>
           </div>
         </div>
@@ -108,7 +169,7 @@
           <div class="card mb-4">
             <img
               src="https://bit.ly/2SiZpPj"
-              class="card-img-top p-3"
+              class="card-img-top ps-3 pe-3 pt-4"
               alt="Product"
             />
             <div class="card-body">
@@ -133,7 +194,81 @@
                   text-center
                 "
               >
-                <a href="#" class="btn btn-primary mb-2 mt-2"> Buy Now </a>
+                <a href="#" class="btn btn-primary mb-2 mt-2"> Pirkti </a>
+              </div>
+              <div
+                class="
+                  price-old
+                  col-lg-6 col-md-6 col-4 col-xs-12 col-sm-4 col-xl-4
+                  align-items-center
+                "
+              >
+                <p
+                  class="
+                    fw-bold
+                    mt-1
+                    mb-0
+                    text-decoration-line-through text-center
+                  "
+                >
+                  € 30.00
+                </p>
+              </div>
+              <div
+                class="
+                  price-new
+                  col-lg-6 col-md-6 col-4 col-xs-12 col-sm-4 col-xl-4
+                  align-items-center
+                "
+              >
+                <h5 class="text-success mb-0 fw-bold text-center">€ 15.00</h5>
+              </div>
+              
+              <!-- //drop2 -->
+              <div class="container text-center w-100 mt-3">
+                <select class="form-select" id="inputGroupSelect03">
+                  <option selected>Pasirinkti...</option>
+                  <option value="1">Vienas</option>
+                  <option value="2">Du</option>
+                  <option value="3">Trys</option>
+                </select>
+              </div>
+              <!-- //drop2 end -->            
+            
+            </div>            
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+          <div class="card mb-4">
+            <img
+              src="https://bit.ly/2SiZpPj"
+              class="card-img-top ps-3 pe-3 pt-4"
+              alt="Product"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div
+              class="
+                card-footer
+                text-nowrap
+                row
+                align-items-center
+                justify-content-around
+              "
+            >
+              <div
+                class="
+                  buy-btn
+                  col-lg-12 col-md-12 col-4 col-xs-12 col-sm-4 col-xl-4
+                  text-center
+                "
+              >
+                <a href="#" class="btn btn-primary mb-2 mt-2"> Pirkti </a>
               </div>
               <div
                 class="
@@ -170,7 +305,7 @@
           <div class="card mb-4">
             <img
               src="https://bit.ly/2SiZpPj"
-              class="card-img-top p-3"
+              class="card-img-top ps-3 pe-3 pt-4"
               alt="Product"
             />
             <div class="card-body">
@@ -195,69 +330,7 @@
                   text-center
                 "
               >
-                <a href="#" class="btn btn-primary mb-2 mt-2"> Buy Now </a>
-              </div>
-              <div
-                class="
-                  price-old
-                  col-lg-6 col-md-6 col-4 col-xs-12 col-sm-4 col-xl-4
-                  align-items-center
-                "
-              >
-                <p
-                  class="
-                    fw-bold
-                    mt-1
-                    mb-0
-                    text-decoration-line-through text-center
-                  "
-                >
-                  € 30.00
-                </p>
-              </div>
-              <div
-                class="
-                  price-new
-                  col-lg-6 col-md-6 col-4 col-xs-12 col-sm-4 col-xl-4
-                  align-items-center
-                "
-              >
-                <h5 class="text-success mb-0 fw-bold text-center">€ 15.00</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4 col-lg-3 col-xl-6">
-          <div class="card mb-4">
-            <img
-              src="https://bit.ly/2SiZpPj"
-              class="card-img-top p-3"
-              alt="Product"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div
-              class="
-                card-footer
-                text-nowrap
-                row
-                align-items-center
-                justify-content-around
-              "
-            >
-              <div
-                class="
-                  buy-btn
-                  col-lg-12 col-md-12 col-4 col-xs-12 col-sm-4 col-xl-4
-                  text-center
-                "
-              >
-                <a href="#" class="btn btn-primary mb-2 mt-2"> Buy Now </a>
+                <a href="#" class="btn btn-primary mb-2 mt-2"> Pirkti </a>
               </div>
               <div
                 class="
@@ -291,5 +364,9 @@
         </div>
       </div>
     </div>
+
+    
+<!-- js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
