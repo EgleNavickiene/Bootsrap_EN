@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BS Nav-Reg-Sign-in</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">BIT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <!-- TODO: Padaryti , kad sis elementas butu rodomi tik mobile (md) breakpointuose -->
+            <!-- Sitas mygtukas, turetu atidaryti prisijungimo modala -->
+
+            <li class="nav-item d-flex d-lg-none d-md-none">
+              <a class="nav-link btn" href="#" tabindex="-1" aria-disabled="true"
+              data-bs-toggle="modal"
+            data-bs-target="#prisijungti-modal"
+                >Prisijungti</a
+              >
+            </li>
+            <!-- TODO: Padaryti ,  sis elementas  butu rodomi tik mobile (md) breakpointuose -->
+            <!-- Sitas mygtukas, turetu atidaryti registracijos modala -->
+            <li class="nav-item d-flex d-lg-none d-md-none">
+              <a class="nav-link btn" href="#" tabindex="-1" aria-disabled="true"
+              data-bs-toggle="modal"
+            data-bs-target="#registracija-modal"
+                >Registracija</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="login-register d-none d-lg-block d-md-block">
+          <button
+            type="button"
+            class="btn btn-sm btn-warning"
+            data-bs-toggle="modal"
+            data-bs-target="#prisijungti-modal"
+          >
+            Prisijungti
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger ms-3"
+            data-bs-toggle="modal"
+            data-bs-target="#registracija-modal"
+          >
+            Registracija
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- END Navigacija -->
+
+    <!-- Modal- prisijungti -->
+    <div
+      class="modal fade"
+      id="prisijungti-modal"
+      tabindex="-1"
+      aria-labelledby="prisijungti-modal-label"
+      aria-hidden="true"
+    >
+      <!-- id="prisijungti-modal" -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="prisijungti-modal-label">Login form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <!-- kryziukas virsuje -->
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="email-adress" class="form-label fw-bold">Email adress</label>
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailinput"
+                  placeholder="Email"
+                />
+                <span class="input-group-text" id="basic-addon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                </span>
+              </div>
+
+              <label for="inputpassword1" class="form-label fw-bold">Password</label>
+              <div class="input-group mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputpassword1"
+                />
+                <span class="input-group-text" id="basic-addon3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                      </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal- prisijungti END -->
+
+    <!-- Modal-Registracija -->
+    <div
+      class="modal fade"
+      id="registracija-modal"
+      tabindex="-1"
+      aria-labelledby="registracija-modal-label"
+      aria-hidden="true"
+    >
+      
+      <div class="modal-dialog modal-sm">   <!-- id="registracija-modal" -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registracija-modal-label">
+              Registration form
+            </h5>
+            <button type="button" class="btn-close"
+             data-bs-dismiss="modal" aria-label="Close">
+            </button>   <!-- cia kryziukas virsuje -->            
+          </div>
+
+          <div class="modal-body">
+            <div class="mb-3">
+              <input
+                class="form-control mb-3"
+                type="text"
+                placeholder="User name"
+                aria-label="username"
+              />
+
+              <label for="email-adress" class="form-label fw-bold"
+                >Email adress</label
+              >
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-square"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                    <path
+                      d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"
+                    ></path>
+                  </svg>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailinput"
+                  placeholder="Email"
+                />
+              </div>
+
+              <label for="inputpassword1" class="form-label fw-bold"
+                >Password</label
+              >
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-lock-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                    ></path>
+                  </svg>
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  id="inputpassword1"
+                />
+              </div>
+            </div>
+
+            <label for="input-confirm-password1" class="form-label fw-bold"
+              >Confirm Password</label
+            >
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-lock-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+              </span>
+              <input
+                type="confirm-password"
+                class="form-control"
+                placeholder="Confirm Password"
+                id="input-confirm-password1"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal- Registracija END -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
